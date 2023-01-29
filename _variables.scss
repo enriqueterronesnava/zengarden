@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Flow+Circular&family=Megrim&family=Nabla&family=Noto+Sans+Canadian+Aboriginal:wght@100;200;300;400;500;600;800;900&family=Noto+Sans+Zanabazar+Square&family=Nuosu+SIL&display=swap');
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Flow Circular', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Noto Sans Canadian Aboriginal', sans-serif;
+font-family: 'Noto Sans Zanabazar Square', sans-serif;
+font-family: 'Nuosu SIL', serif;
+
+/* SCSS HEX */
+$polished-pine: #5aac95ff;
+$keppel: #63bda4ff;
+$middle-blue-green: #9edec7ff;
+$aero-blue: #d9ffeaff;
+$lime-green: #26d701ff;
+$cadet-blue: #62afb7ff;
+$red-crayola: #f20553ff;
+$corn: #ffec47ff;
+
+/* SCSS HSL */
+$polished-pine: hsla(163, 33%, 51%, 1);
+$keppel: hsla(163, 41%, 56%, 1);
+$middle-blue-green: hsla(158, 49%, 75%, 1);
+$aero-blue: hsla(147, 100%, 93%, 1);
+$lime-green: hsla(110, 99%, 42%, 1);
+$cadet-blue: hsla(186, 37%, 55%, 1);
+$red-crayola: hsla(340, 96%, 48%, 1);
+$corn: hsla(54, 100%, 64%, 1);
+
+/* SCSS RGB */
+$polished-pine: rgba(90, 172, 149, 1);
+$keppel: rgba(99, 189, 164, 1);
+$middle-blue-green: rgba(158, 222, 199, 1);
+$aero-blue: rgba(217, 255, 234, 1);
+$lime-green: rgba(38, 215, 1, 1);
+$cadet-blue: rgba(98, 175, 183, 1);
+$red-crayola: rgba(242, 5, 83, 1);
+$corn: rgba(255, 236, 71, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-right: linear-gradient(90deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-bottom: linear-gradient(180deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-left: linear-gradient(270deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-top-right: linear-gradient(45deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-bottom-right: linear-gradient(135deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-top-left: linear-gradient(225deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-bottom-left: linear-gradient(315deg, #5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+$gradient-radial: radial-gradient(#5aac95ff, #63bda4ff, #9edec7ff, #d9ffeaff, #26d701ff, #62afb7ff, #f20553ff, #ffec47ff);
+

@@ -1,0 +1,174 @@
+@use 'variables' as *;
+
+// mixins to take care of repeated patterns.
+@mixin set-font($size: 1em, $line-height: normal, $font: $Nuosu-SIL) {
+  font-family: $font;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin set-flex($direction: row, $wrap: wrap) {
+  display: flex;
+  flex-flow: $direction $wrap;
+}
+
+@mixin uppercase($color: $text-dark) {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color;
+}
+@mixin divider($color: $accent1) {
+  border-top: 1px solid $color;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+// these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+h2,
+h3,
+h4 {
+  font-family: $Megrim;
+  margin: 0;
+}
+h1 {
+  background: $accent1;
+  color: $text-light;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h1 {
+  margin: 20px 0;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 10% 10% 20% 20%;
+  border-style:hidden;
+  box-shadow: 0px 20px 7px -15px rgb(0, 0, 0);
+  background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+
+  
+  
+  &.ribbon {
+    background-color: $red-crayola;
+    $red-crayola: darken($red-crayola, 10);
+    &:before, &:after {
+      top: 45%;
+      transform: translateZ(-1px)
+    }
+    &:before {
+      border-color: $red-crayola $red-crayola $red-crayola transparent;
+      left: -30px;
+      border-width: 25px;
+      border-style:dotted;
+      border-radius: 20px 0 20px 10px;
+    }
+    &:after {
+      border-color: $red-crayola transparent $red-crayola $red-crayola;
+      right: -30px;
+      border-width: 25px;
+      border-style:dotted;
+      border-radius: 0 20px 0 10px; 
+    }
+  }
+}
+
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+h2 {
+  color: $text-light;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+    background-size: 6px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 10% 10% 20% 20%;
+  border-style:hidden;
+  box-shadow: 0px 20px 7px -15px rgb(0, 0, 0);
+  
+  
+  &.ribbon {
+    background-color: $corn;
+    $color-ribbon: darken($corn, 20);
+    &:before, &:after {
+      top: 45%;
+      transform: translateZ(-1px)
+    }
+    &:before {
+      border-color: $color-ribbon $color-ribbon $color-ribbon transparent;
+      left: -30px;
+      border-width: 25px;
+      border-style:dotted;
+      border-radius: 20px 0 20px 10px;
+    }
+    &:after {
+      border-color: $color-ribbon transparent $color-ribbon $color-ribbon;
+      right: -30px;
+      border-width: 25px;
+      border-style:dotted;
+      border-radius: 0 20px 0 10px; 
+    }
+  }
+}
+
+h2:before, h2:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+  color: $aero-blue;
+  border: 1px solid black;
+  background: #333;
+  background-image: repeating-linear-gradient(315deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 3px, transparent -19px, transparent 5px);
+    background-size: 6px;
+  
+}
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  @include set-font(1em, 1.5em);
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: $text-dark;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+a:hover {
+  border-color: $accent1;
+}
