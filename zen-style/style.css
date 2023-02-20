@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Flow+Circular&family=Megrim&family=Nabla&family=Noto+Sans+Canadian+Aboriginal:wght@100;200;300;400;500;600;800;900&family=Noto+Sans+Zanabazar+Square&family=Nuosu+SIL&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #daede2;
+  padding: 5%;
+}
+
+body {
+  font-family: verdana, arial, sans-serif;
+  font-size: 85%;
+  color: #333;
+  background-color: #77c4d3;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.page-wrapper {
+  display: grid;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 60px;
+}
+
+h2 {
+  position: absolute;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  width: 80%;
+  height: 30px;
+  border: 1px solid;
+  top: -20px;
+  left: 10%;
+}
+
+.summary {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.summary p:first-child {
+  border: 1px solid gold;
+  padding: 0.85rem;
+}
+.summary p:nth-child(2) {
+  border: 1px solid gold;
+  padding: 0.85rem;
+}
+
+.preamble {
+  border: 1px solid red;
+  position: relative;
+  margin-top: 35px;
+  padding: 1.2rem;
+}
+.preamble h3 {
+  font-size: 0.8rem;
+  border: 1px solid;
+  position: absolute;
+  right: -10px;
+  top: -40px;
+  width: 65%;
+  padding: 0.6rem;
+}
+
+.supporting {
+  margin-top: 1rem;
+}
+
+.explanation {
+  border: 1px solid;
+  padding: 1rem;
+}
+.explanation h3 {
+  width: 80%;
+  font-size: 1.6rem;
+  margin: 0 0 0 auto;
+  text-align: right;
+}
+.explanation p:nth-child(2) {
+  text-align: left;
+}
+.explanation p:nth-child(3) {
+  text-align: right;
+}
+
+.participation h3 {
+  border: 1px solid;
+}
+.participation p:nth-child(3),
+.participation p:nth-child(4) {
+  text-align: start;
+  border: 1px solid;
+  padding: 1.2rem;
+}
+
+.benefits {
+  border: 1px solid;
+  position: relative;
+  margin-top: 40px;
+  padding: 1.2rem;
+  text-align: left;
+}
+.benefits h3 {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  width: 60%;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+
+.requirements {
+  border: 1px solid;
+  margin-top: 40px;
+  position: relative;
+  padding: 1.2rem;
+  text-align: justify;
+}
+.requirements h3 {
+  padding: 0.7rem;
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  border: 1px solid;
+  width: 65%;
+}
+.requirements p:nth-child(2n) {
+  position: relative;
+}
+.requirements p:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background: #333;
+  top: 105%;
+  left: 20%;
+}/*# sourceMappingURL=style.css.map */

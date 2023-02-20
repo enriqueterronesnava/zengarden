@@ -18,4 +18,148 @@ body {
   background-color: $primary;
   margin: 0;
   padding: 1em;
+  text-align: center;
+}
+
+.page-wrapper {
+  display: grid;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  font-size: 1.5rem;
+  width: $h1width;
+  height: 60px;
+}
+
+h2 {
+  position: absolute;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  width: 80%;
+  height: 30px;
+  border: 1px solid;
+  top: -20px;
+  left: 10%;
+}
+
+.summary {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+  flex-wrap: wrap;
+
+  p:first-child {
+    border: 1px solid gold;
+    padding: 0.85rem;
+  }
+
+  p:nth-child(2) {
+    border: 1px solid gold;
+    padding: 0.85rem;
+  }
+}
+
+.preamble {
+  border: 1px solid red;
+  position: relative;
+  margin-top: 35px;
+
+  padding: 1.2rem;
+
+  h3 {
+    font-size: 0.8rem;
+    border: 1px solid;
+    position: absolute;
+    right: -10px;
+    top: -40px;
+    width: 65%;
+    padding: 0.6rem;
+  }
+}
+
+.supporting {
+  margin-top: 1rem;
+}
+.explanation {
+  border: 1px solid;
+  padding: 1rem;
+  h3 {
+    width: 80%;
+    font-size: 1.6rem;
+    margin: 0 0 0 auto;
+    text-align: right;
+  }
+  p:nth-child(2) {
+    text-align: left;
+  }
+  p:nth-child(3) {
+    text-align: right;
+  }
+}
+
+.participation {
+  h3 {
+    border: 1px solid;
+  }
+
+  p:nth-child(3),
+  p:nth-child(4) {
+    text-align: start;
+    border: 1px solid;
+    padding: 1.2rem;
+  }
+}
+
+.benefits {
+  border: 1px solid;
+  position: relative;
+  margin-top: 40px;
+  padding: 1.2rem;
+  text-align: left;
+  h3 {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    width: 60%;
+    border: 1px solid;
+    padding: 0.5rem;
+  }
+}
+
+.requirements {
+  border: 1px solid;
+  margin-top: 40px;
+  position: relative;
+  padding: 1.2rem;
+  text-align: justify;
+
+  h3 {
+    padding: 0.7rem;
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    border: 1px solid;
+    width: 65%;
+  }
+
+  p:nth-child(n > 2) {
+    position: relative;
+  }
+  p:nth-child(n > 2)::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 1px; // suit your need
+    background: #333; // suit your need
+    top: 105%;
+    left: 20%;
+  }
 }
