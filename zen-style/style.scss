@@ -352,6 +352,22 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 599px){
+  .zen-resources{
+    margin-top: 30px;
+  }
+  
+
+  .design-selection{
+    background-image: url('./images/parchment.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .design-archives{
+    margin-top: 70px;
+  }
+}
 @media only screen and (min-width: 600px) {
   html {
     padding: 0;
